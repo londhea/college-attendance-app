@@ -1,0 +1,23 @@
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {IonicModule} from '@ionic/angular';
+import {LoginPageRoutingModule} from './login-routing.module';
+import {LoginPage} from './login.page';
+import {ApiRequestService} from "../shared/services/api-request.service";
+import {HttpClientModule} from "@angular/common/http";
+
+@NgModule({
+  imports: [
+    CommonModule,
+    IonicModule,
+    LoginPageRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
+  ],
+  declarations: [LoginPage],
+  providers: [ApiRequestService]
+})
+export class LoginPageModule {
+}

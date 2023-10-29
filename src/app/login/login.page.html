@@ -1,0 +1,37 @@
+<ion-content>
+  <div class="loginLogo m-0 p-0 ">
+    <ion-img src="assets/img/logo.png" alt="logo"></ion-img>
+  </div>
+  <div class="loginFormBox">
+    <form [formGroup]="LoginForm" class="mt-4">
+      <ion-row>
+        <ion-col>
+          <ion-input label="Email" label-placement="floating" fill="outline" placeholder="Email"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input label="Password" label-placement="floating" fill="outline" placeholder="Password"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row class="h-auto">
+        <ion-col>
+          <ion-checkbox labelPlacement="end">Remember Me</ion-checkbox>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button expand="full">Sign In</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row class="justify-content-end pt-0 pe-4">
+        <ion-label class="forgotPassword">Forgot Password</ion-label>
+      </ion-row>
+      <ion-row class="pt-3">
+        <ion-col class="text-center">
+          <ion-label >Not a Registered User ? <a href="/register">Click here</a></ion-label>
+        </ion-col>
+      </ion-row>
+    </form>
+  </div>
+</ion-content>
